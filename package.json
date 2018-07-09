@@ -1,0 +1,32 @@
+{
+  "name": "bs-pretty-bytes",
+  "version": "0.1.0",
+  "description": "BuckleScript bindings for pretty-bytes",
+  "main": "lib/js/src/PrettyBytes.js",
+  "repository": "git@github.com:764664/bs-pretty-bytes.git",
+  "author": "Jie Lu <764664@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "reason",
+    "bucklescript",
+    "pretty-bytes"
+  ],
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "pretest": "yarn run build",
+    "test": "jest",
+    "prepublish": "yarn run clean && yarn run build"
+  },
+  "peerDependencies": {
+    "pretty-bytes": "^5.1.0"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.2",
+    "bs-platform": "^3.0.0",
+    "husky": "^0.14.3",
+    "jest": "^22.1.2",
+    "pretty-bytes": "^5.1.0"
+  }
+}

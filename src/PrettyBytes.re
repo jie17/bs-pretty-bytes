@@ -1,0 +1,1 @@
+[@bs.module] external prettyBytes : int => string = "pretty-bytes";
